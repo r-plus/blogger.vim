@@ -256,6 +256,7 @@ module Blogger
       xml += "<app:control><app:draft>yes</app:draft></app:control>"
     end
     xml += "</entry>"
+    xml.gsub!(/\n/,'')
   end
 
   # html2text :: String -> String
